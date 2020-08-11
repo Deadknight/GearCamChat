@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GearCamChat", "SRC\GearCamChat.csproj", "{08B76389-DE59-4E24-94F6-06CA0D18EBF6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OverlayLib", "OverlayLib-SRC\OverlayLib.csproj", "{E09A4038-A542-42C0-AFF6-7FFA592F7AB3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GearCamChatServer", "GearCamChatServer\GearCamChatServer.csproj", "{CA572543-CDFA-4E94-9932-218F359ED9BE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{08B76389-DE59-4E24-94F6-06CA0D18EBF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08B76389-DE59-4E24-94F6-06CA0D18EBF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08B76389-DE59-4E24-94F6-06CA0D18EBF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08B76389-DE59-4E24-94F6-06CA0D18EBF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E09A4038-A542-42C0-AFF6-7FFA592F7AB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E09A4038-A542-42C0-AFF6-7FFA592F7AB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E09A4038-A542-42C0-AFF6-7FFA592F7AB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E09A4038-A542-42C0-AFF6-7FFA592F7AB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA572543-CDFA-4E94-9932-218F359ED9BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA572543-CDFA-4E94-9932-218F359ED9BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA572543-CDFA-4E94-9932-218F359ED9BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA572543-CDFA-4E94-9932-218F359ED9BE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

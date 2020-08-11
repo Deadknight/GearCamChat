@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{08B76389-DE59-4E24-94F6-06CA0D18EBF6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GearCamChat</RootNamespace>
+    <AssemblyName>GearCamChat</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+    <ApplicationIcon>otheroptions.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Client.cs" />
+    <Compile Include="ClientHandler.cs" />
+    <Compile Include="GAISReader.cs" />
+    <Compile Include="GAISWriter.cs" />
+    <Compile Include="Helpers\Draw.cs" />
+    <Compile Include="Helpers\Utils.cs" />
+    <Compile Include="PluginPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PluginPanel.Designer.cs">
+      <DependentUpon>PluginPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\INIStreamer.cs" />
+    <Compile Include="Plugins\APlugin.cs" />
+    <Compile Include="Plugins\GeneralPlugin.cs" />
+    <Compile Include="Plugins\IPlugin.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Helpers\SaveAttribute.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebCamCapture.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WebcamEventArgs.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MainForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PluginPanel.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PluginPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WebCamCapture.resx">
+      <DependentUpon>WebCamCapture.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="otheroptions.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OverlayLib-SRC\OverlayLib.csproj">
+      <Project>{E09A4038-A542-42C0-AFF6-7FFA592F7AB3}</Project>
+      <Name>OverlayLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>
